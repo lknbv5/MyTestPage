@@ -4,33 +4,6 @@
   
     
     <entry>
-      <title>IIS反向代理配置</title>
-      <link href="/2022/07/19/IIS%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
-      <url>/2022/07/19/IIS%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</url>
-      
-        <content type="html"><![CDATA[<h2 id="第一步："><a href="#第一步：" class="headerlink" title="第一步："></a>第一步：</h2><p>安装 URL Rewrite和Application Request Routing（简称为ARR）两个IIS模块</p><p>ARR 下载地址： <a href="https://www.iis.net/downloads/microsoft/application-request-routing">Application Request Routing : The Official Microsoft IIS Site</a></p><p>URL Rewrite下载地址：<a href="https://www.iis.net/downloads/microsoft/url-rewrite">URL Rewrite : The Official Microsoft IIS Site</a></p><p><img src="/myfile%5C2022-07-21-14-44-05-image.png"></p><p><img src="/myfile%5C2022-07-21-14-44-20-image.png"></p><h2 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h2><p>1、启用ARR Proxy：在服务器上面，找到IIS管理器，点击Application Request Routing（简称为ARR）图标，选择Server Proxy Settings，勾上Enable proxy并点击右侧的应用。</p><p><img src="/myfile%5C2022-07-21-14-46-35-image.png"></p><p><img src="/myfile%5C2022-07-21-14-46-59-image.png"></p><p><img src="/myfile%5C2022-07-21-14-47-49-image.png"></p><p>2、添加URL重写规则</p><p><img src="/myfile%5C2022-07-21-15-11-58-image.png"></p><p><img src="/myfile%5C2022-07-21-15-11-00-image.png"></p><p><img src="/myfile/2022-07-21-15-13-22-image.png"></p><p>至此即可将本服务器地址统一反向代理到目标服务器地址</p><p>3.进阶设置</p><p>双击规则，进行详细编辑</p><p><img src="/myfile%5C2022-07-21-15-16-57-image.png"></p><p>分别通过模式及下方条件修改添加过滤，进行具体匹配后反向代理</p><p><img src="/myfile%5C2022-07-21-15-17-46-image.png"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 后端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> IIS </tag>
-            
-            <tag> 反向代理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>示例脚本</title>
       <link href="/2022/07/19/%E7%A4%BA%E4%BE%8B%E8%84%9A%E6%9C%AC/"/>
       <url>/2022/07/19/%E7%A4%BA%E4%BE%8B%E8%84%9A%E6%9C%AC/</url>
@@ -48,6 +21,33 @@
         <tags>
             
             <tag> 脚本 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IIS反向代理配置</title>
+      <link href="/2022/07/19/IIS%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
+      <url>/2022/07/19/IIS%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="第一步："><a href="#第一步：" class="headerlink" title="第一步："></a>第一步：</h2><p>安装 URL Rewrite和Application Request Routing（简称为ARR）两个IIS模块</p><p>ARR 下载地址： <a href="https://www.iis.net/downloads/microsoft/application-request-routing">Application Request Routing : The Official Microsoft IIS Site</a></p><p>URL Rewrite下载地址：<a href="https://www.iis.net/downloads/microsoft/url-rewrite">URL Rewrite : The Official Microsoft IIS Site</a></p><p><img src="/myfile/2022-07-21-14-44-05-image.png"></p><p><img src="/myfile/2022-07-21-14-44-20-image.png"></p><h2 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h2><p>1、启用ARR Proxy：在服务器上面，找到IIS管理器，点击Application Request Routing（简称为ARR）图标，选择Server Proxy Settings，勾上Enable proxy并点击右侧的应用。</p><p><img src="/myfile/2022-07-21-14-46-35-image.png"></p><p><img src="/myfile/2022-07-21-14-46-59-image.png"></p><p><img src="/myfile/2022-07-21-14-47-49-image.png"></p><p>2、添加URL重写规则</p><p><img src="/myfile/2022-07-21-15-11-58-image.png"></p><p><img src="/myfile/2022-07-21-15-11-00-image.png"></p><p><img src="/myfile/2022-07-21-15-13-22-image.png"></p><p>至此即可将本服务器地址统一反向代理到目标服务器地址</p><p>3.进阶设置</p><p>双击规则，进行详细编辑</p><p><img src="/myfile/2022-07-21-15-16-57-image.png"></p><p>分别通过模式及下方条件修改添加过滤，进行具体匹配后反向代理</p><p><img src="/myfile/2022-07-21-15-17-46-image.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IIS </tag>
+            
+            <tag> 反向代理 </tag>
             
         </tags>
       
